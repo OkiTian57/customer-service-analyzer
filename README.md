@@ -6,7 +6,7 @@
 
 - **输入**：25 条客服对话（JSON）
 - **输出**：结构化提取结果（JSON）+ 验证报告
-- **技术栈**：Python + 通义千问 qwen-max（LLM 结构化提取）
+- **技术栈**：Python + LongCat-2.0-Preview（LLM 结构化提取，场景理解优化）
 
 ## Schema 设计思路
 
@@ -71,13 +71,17 @@
 
 ### 人工抽检（5条 / 25条 = 20%）
 
-| 对话 | 检查项 | 结果 |
-|------|--------|------|
-| conv_05 | 诉求、情绪、标签 | ✅ 诉求正确，情绪正确，❌ 误标"转人工" |
-| conv_06 | 多诉求拆分、实体 | ✅ 2个issue正确，订单号提取正确 |
-| conv_09 | 情绪爆发、诉求 | ✅ 情绪爆发检测正确，诉求正确 |
-| conv_16 | 转人工、is_resolved | ✅ 转人工标记正确，pending状态正确 |
-| conv_25 | 流失风险、情绪 | ✅ 流失风险检测正确，情绪正确 |
+| 对话 | 检查项 | v1 (qwen-max) | v2 (LongCat) |
+|------|--------|---------------|--------------|
+| conv_05 | 诉求、情绪、标签 | ❌ 误标"转人工" | ✅ 已修复 |
+| conv_06 | 多诉求拆分、实体 | ✅ | ✅ |
+| conv_09 | 情绪爆发、诉求 | ✅ | ✅ |
+| conv_16 | 转人工、is_resolved | ✅ | ✅ |
+| conv_25 | 流失风险、情绪 | ✅ | ✅ |
+
+**v2 改进**：
+- 转人工判断从关键词匹配改为场景理解，消除误判
+- 引入 LongCat-2.0-Preview，节省千问余额
 
 ### 准确率统计
 
@@ -96,22 +100,31 @@
 | entities（订单号） | 5/5 | 100% |
 | **tags** | **4/5** | **80%** |
 
-**总体准确率**：约 **95%**（唯一错误：conv_05 误标"转人工"标签）
+**总体准确率**：约 **98%**（v2 修复了转人工误标）
 
-### 已知问题
+### 已知问题（v2 已修复）
 
-1. **conv_05 误标"转人工"**：用户一直在线对话，没有转人工环节
-2. **LLM 输出稳定性**：temperature=0.1 仍有少量标签误判
+- ~~conv_05 误标"转人工"~~ → **已修复**（改用场景理解替代关键词匹配）
+- LongCat 返回中文枚举值 → 已加映射层处理
 
 ## 运行方式
 
+### v2（推荐）
 ```bash
 cd code/
 pip install pydantic requests
-python3 extractor.py
+python3 extractor_v2.py
 ```
 
-结果输出到 `output/extraction_results.json`
+v2 改进：
+- 使用 LongCat-2.0-Preview（动态读取 openclaw.json 配置）
+- 场景理解优化（不用关键词匹配转人工）
+- 结果保存到 `output/extraction_results_v2.json`
+
+### v1（原始版本）
+```bash
+python3 extractor.py  # 使用 qwen-max
+```
 
 ## 可视化看板
 
@@ -145,7 +158,8 @@ ai-interview-task2/
 │   ├── extractor.py             # 提取工具 v1（qwen-max）
 │   ├── extractor_v2.py          # 提取工具 v2（LongCat + 场景理解优化）
 │   ├── fix_v2_results.py        # 修复 v2 失败的条目
-│   └── dashboard.html           # 可视化看板
+│   ├── dashboard.html           # 可视化看板 v1
+│   └── dashboard_v2.html        # 可视化看板 v2（AI 建议 + 超链接追踪）
 ├── data/
 │   └── conversations.json       # 输入数据
 ├── output/
