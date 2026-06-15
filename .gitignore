@@ -13,8 +13,8 @@ venv/
 *.key
 *.pem
 
-# 输出数据（可由脚本重新生成）
-output/*.png
+# 输出数据（可由脚本重新生成，但截图保留用于 README）
+# output/*.png  <- 保留截图
 
 # IDE
 .vscode/

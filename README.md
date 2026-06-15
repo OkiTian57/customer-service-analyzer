@@ -126,6 +126,12 @@ python3 extractor.py
 
 **看板截图**：`output/dashboard_screenshot.png`
 
+## 在线看板
+
+访问 GitHub Pages：**https://OkiTian57.github.io/customer-service-analyzer/**
+
+![看板截图](docs/dashboard_screenshot.png)
+
 ## 项目结构
 
 ```
