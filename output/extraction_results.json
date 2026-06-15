@@ -1,0 +1,1117 @@
+{
+  "meta": {
+    "total": 25,
+    "success": 25,
+    "failed": 0,
+    "model": "qwen-max"
+  },
+  "errors": [],
+  "data": [
+    {
+      "conversation_id": "conv_01",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 5,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户购买的蓝牙耳机左耳没声音，申请退款",
+          "issue_category": "退款/退货",
+          "resolution": "客服已帮用户发起退款申请，预计1-3个工作日到账",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "satisfied",
+        "sentiment_shift": "从平静到满意"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 4,
+        "response_quality_reason": "客服及时响应并解决问题，用户表示满意",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "蓝牙耳机"
+        ],
+        "phone_numbers": [
+          "138xxxx5521"
+        ],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_02",
+      "channel": "在线",
+      "agent_name": "小李",
+      "turn_count": 5,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "快递显示已签收但用户未收到包裹",
+          "issue_category": "物流问题",
+          "resolution": "客服将联系快递公司核实派送情况，并在24小时内回复用户",
+          "is_resolved": "pending",
+          "resolution_type": "待跟进",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服提供了合理的建议并承诺跟进，但没有立即解决问题",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_03",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户询问50元优惠券无法使用的原因",
+          "issue_category": "优惠券/活动",
+          "resolution": "客服解释了优惠券的使用条件，并建议用户再购买12元以上的服装类商品以满足使用条件",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答准确，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": [
+          50,
+          200,
+          188,
+          12
+        ]
+      },
+      "tags": [
+        "仅咨询"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_04",
+      "channel": "电话",
+      "agent_name": "小张",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户收到异地登录短信，询问账号安全问题",
+          "issue_category": "账户安全",
+          "resolution": "客服确认有异地登录记录，并建议用户修改密码并开启二次验证",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从担心到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服及时回应并提供了有效建议，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [
+          "139xxxx8832"
+        ],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_05",
+      "channel": "在线",
+      "agent_name": "小李",
+      "turn_count": 5,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户收到的手机壳是碎的，且之前联系客服未得到及时回复。",
+          "issue_category": "换货/补发",
+          "resolution": "客服为用户申请免费补发一个新的手机壳，并赠送一张20元优惠券作为补偿。",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "20元优惠券"
+        }
+      ],
+      "sentiment": {
+        "initial": "angry",
+        "final": "satisfied",
+        "sentiment_shift": "从愤怒到满意"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 4,
+        "response_quality_reason": "客服能够理解用户的不满，并迅速提出解决方案，有效安抚了用户情绪。",
+        "was_transferred": false,
+        "proactive_compensation": true
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "手机壳"
+        ],
+        "phone_numbers": [],
+        "amounts": [
+          "20元"
+        ]
+      },
+      "tags": [
+        "情绪爆发",
+        "转人工"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_06",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "退货申请查询",
+          "issue_category": "退款/退货",
+          "resolution": "退货申请已审核通过，用户需按地址寄回商品",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        },
+        {
+          "issue_id": 2,
+          "issue_summary": "快递状态查询",
+          "issue_category": "物流问题",
+          "resolution": "订单 DD20240305-8812 配送中，预计今天下午送达",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答了用户的问题，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [
+          "DD20240301-5523",
+          "DD20240305-8812"
+        ],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "多诉求"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_07",
+      "channel": "在线",
+      "agent_name": "小张",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户希望部分退货，只退蓝色杯子",
+          "issue_category": "退款/退货",
+          "resolution": "已为用户发起蓝色杯子的退货申请，款项将在1-3个工作日退回",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答准确且及时，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "蓝色的杯子",
+          "碗"
+        ],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_08",
+      "channel": "在线",
+      "agent_name": "小李",
+      "turn_count": 3,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "询问充电宝是否可以带上飞机",
+          "issue_category": "商品咨询",
+          "resolution": "客服解释了民航局规定，确认该充电宝可以随身携带上飞机",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "回答准确且及时，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "仅咨询"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_09",
+      "channel": "电话",
+      "agent_name": "小王",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户询问退货运费由谁承担",
+          "issue_category": "退款/退货",
+          "resolution": "质量问题退货运费由商家承担，用户寄回后运费会原路退回",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "frustrated",
+        "final": "neutral",
+        "sentiment_shift": "从愤怒到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 4,
+        "response_quality_reason": "客服能够理解用户的问题并给出明确的解决方案",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "情绪爆发"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_10",
+      "channel": "在线",
+      "agent_name": "小张",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户没有明确的诉求",
+          "issue_category": "其他",
+          "resolution": "用户未提出具体问题，客服等待用户进一步说明",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服礼貌回应，但对话内容较少，无法全面评估",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "沉默用户"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_11",
+      "channel": "在线",
+      "agent_name": "小李",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户询问退款进度",
+          "issue_category": "退款/退货",
+          "resolution": "已告知用户退款已于3月5日处理，银行处理中，预计1-2个工作日到账",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服能够及时查询并提供相关信息，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "衣服"
+        ],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "信息缺失"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_12",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 5,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户咨询两款手机的比较",
+          "issue_category": "商品咨询",
+          "resolution": "用户决定自行查询",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答中规中矩，但未能提供具体帮助",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "仅咨询"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_13",
+      "channel": "电话",
+      "agent_name": "小张",
+      "turn_count": 8,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户购买的扫地机器人在两周内出现故障，要求换新。",
+          "issue_category": "换货/补发",
+          "resolution": "客服同意为用户安排换新，并承担退货运费。",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "frustrated",
+        "final": "neutral",
+        "sentiment_shift": "从沮丧到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 4,
+        "response_quality_reason": "客服能够理解用户的问题并迅速提供解决方案，且主动承担退货运费。",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "扫地机器人"
+        ],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_14",
+      "channel": "在线",
+      "agent_name": "小李",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户请求修改派送地址",
+          "issue_category": "物流问题",
+          "resolution": "客服已提交改址申请，新地址为朝阳区建国路88号 远洋国际 12层。改址可能会导致配送延迟1-2天。",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服响应及时且有效，但没有特别突出的表现。",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [
+          "DD20240310-2245"
+        ],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_15",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户在退货流程中遇到上传照片格式问题",
+          "issue_category": "退款/退货",
+          "resolution": "客服指导用户将照片转换为JPG或PNG格式并成功上传",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "frustrated",
+        "final": "neutral",
+        "sentiment_shift": "从沮丧到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 4,
+        "response_quality_reason": "客服能够快速定位问题并提供有效解决方案，帮助用户解决问题",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_16",
+      "channel": "在线",
+      "agent_name": "小张",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户申请退款一周未处理",
+          "issue_category": "退款/退货",
+          "resolution": "",
+          "is_resolved": "pending",
+          "resolution_type": "待跟进",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "frustrated",
+        "final": "neutral",
+        "sentiment_shift": "从沮丧到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服理解用户情绪并及时转接人工，但未解决问题",
+        "was_transferred": true,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [
+          "DD20240228-3341"
+        ],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "转人工",
+        "情绪爆发"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_17",
+      "channel": "电话",
+      "agent_name": "小李",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户询问黑色真皮双肩包的补货时间",
+          "issue_category": "商品咨询",
+          "resolution": "客服告知预计下周三补货，并承诺到货后通知用户",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答了用户的问题，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "黑色真皮双肩包"
+        ],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "仅咨询"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_18",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 7,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户购买的两件衣服尺码不合适，希望换货。",
+          "issue_category": "换货/补发",
+          "resolution": "客服告知用户需要先退货再重新下单，并说明运费由用户承担。用户接受。",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答了用户的问题并提供了明确的解决方案，但没有主动提出补偿。",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "白色T恤",
+          "蓝色衬衫"
+        ],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_19",
+      "channel": "在线",
+      "agent_name": "小张",
+      "turn_count": 5,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户请求取消未发货的订单",
+          "issue_category": "订单查询",
+          "resolution": "已帮用户取消订单，款项将在1-3个工作日退回原支付方式",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 4,
+        "response_quality_reason": "客服快速响应并解决了用户的问题",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [
+          "DD20240312-7789"
+        ],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_20",
+      "channel": "电话",
+      "agent_name": "小李",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户收到的商品是坏的，要求退货并质疑品控问题",
+          "issue_category": "退款/退货",
+          "resolution": "客服同意全额退款，并提供50元无门槛优惠券",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "50元无门槛优惠券"
+        }
+      ],
+      "sentiment": {
+        "initial": "frustrated",
+        "final": "neutral",
+        "sentiment_shift": "从沮丧到中立"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 4,
+        "response_quality_reason": "客服积极解决问题并主动提出补偿",
+        "was_transferred": false,
+        "proactive_compensation": true
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "情绪爆发"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_21",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 6,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户询问面膜成分并关注烟酰胺浓度",
+          "issue_category": "商品咨询",
+          "resolution": "客服提供了面膜成分信息，并推荐了不含烟酰胺的面膜",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答了用户的问题，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "面膜"
+        ],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "仅咨询"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_22",
+      "channel": "在线",
+      "agent_name": "小张",
+      "turn_count": 5,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "快递放错快递柜，用户无法取件",
+          "issue_category": "物流问题",
+          "resolution": "客服联系快递公司重新派送到用户附近的快递柜或送货上门",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服能够理解用户的问题并提供解决方案，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_23",
+      "channel": "电话",
+      "agent_name": "小李",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户建议增加下单前查看实物视频的功能，因为之前购买的商品颜色与图片有较大差异。",
+          "issue_category": "产品建议",
+          "resolution": "客服记录了用户的建议并反馈给产品团队。",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服能够理解用户的需求，并且积极地记录和反馈用户的建议。",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "产品建议"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_24",
+      "channel": "在线",
+      "agent_name": "小王",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "询问蓝牙耳机是否有黑色款",
+          "issue_category": "商品咨询",
+          "resolution": "客服确认有黑色款并询问是否需要下单",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "neutral",
+        "final": "neutral",
+        "sentiment_shift": "从平静到平静"
+      },
+      "churn_risk": {
+        "has_risk": false,
+        "risk_level": null,
+        "risk_reason": ""
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回答及时且准确，但没有特别突出的表现",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [
+          "蓝牙耳机"
+        ],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "仅咨询"
+      ],
+      "manager_note": ""
+    },
+    {
+      "conversation_id": "conv_25",
+      "channel": "在线",
+      "agent_name": "小张",
+      "turn_count": 4,
+      "issues": [
+        {
+          "issue_id": 1,
+          "issue_summary": "用户等待时间过长，最终决定在其他地方购买商品",
+          "issue_category": "其他",
+          "resolution": "用户表示已在其他地方购买，客服表示歉意并提供后续服务支持",
+          "is_resolved": true,
+          "resolution_type": "已解决",
+          "compensation": "无"
+        }
+      ],
+      "sentiment": {
+        "initial": "frustrated",
+        "final": "neutral",
+        "sentiment_shift": "从沮丧到中立"
+      },
+      "churn_risk": {
+        "has_risk": true,
+        "risk_level": "high",
+        "risk_reason": "用户明确表示已在其他地方购买商品"
+      },
+      "agent_performance": {
+        "response_quality": 3,
+        "response_quality_reason": "客服回应及时且礼貌，但未能解决问题",
+        "was_transferred": false,
+        "proactive_compensation": false
+      },
+      "entities": {
+        "order_numbers": [],
+        "product_names": [],
+        "phone_numbers": [],
+        "amounts": []
+      },
+      "tags": [
+        "流失风险"
+      ],
+      "manager_note": ""
+    }
+  ]
+}
